@@ -17,7 +17,7 @@ export function App() {
     return (
       <div className="app-root">
         <header className="app-header">
-          <h1>Plain English Word Game</h1>
+          <h1>Lynsey's English Word Game</h1>
           <p className="subtitle">Add examples to start playing.</p>
         </header>
         <main>
@@ -67,9 +67,9 @@ export function App() {
   return (
     <div className="app-root">
       <header className="app-header">
-        <h1>Plain English Word Game</h1>
+        <h1>Lynsey's Plain English Word Game</h1>
         <p className="subtitle">
-          Spot the redundant word to make each sentence cleaner and sharper.
+          Spot the (first) redundant word to make each sentence cleaner and sharper.
         </p>
       </header>
 
@@ -151,7 +151,7 @@ export function App() {
 
         <section className="footer-note">
           <p>
-            You can add more examples in <code>src/data/examples.ts</code> to grow the game.
+            You can add more examples to <code><a href="https://github.com/ianabc/LHPlainEnglish/blob/main/src/data/examples.ts">src/data/examples.ts</a></code> to grow the game.
           </p>
         </section>
       </main>

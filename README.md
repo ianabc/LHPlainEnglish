@@ -1,7 +1,8 @@
 # Plain English Game
 
-This is a boilerplate react app to publish a game associated with a presentation
-on Plain English by LH. The idea is the app will show you a page with a sentence
+This is a boilerplate react app to publish [a react
+game](https://ianabc.github.io/LHPlainEnglish) associated with a presentation on
+Plain English by LH. The idea is the app will show you a page with a sentence
 containing a redundant word. You can click each word, and you'll get feedback on
 your guesses. To run it locally,
 ```shell
