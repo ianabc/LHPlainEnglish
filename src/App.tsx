@@ -17,7 +17,7 @@ export function App() {
     return (
       <div className="app-root">
         <header className="app-header">
-          <h1>Lynsey's English Word Game</h1>
+          <h1>Lynsey's Plain Language Word Game</h1>
           <p className="subtitle">Add examples to start playing.</p>
         </header>
         <main>
@@ -120,9 +120,7 @@ export function App() {
                 <h2>Nice catch!</h2>
                 <p>
                   <strong>&ldquo;{currentExample.redundantWord}&rdquo;</strong> is
-                  redundant here.
-                </p>
-                <p>{currentExample.explanation}</p>
+                  redundant here, {currentExample.explaination}.</p>
               </div>
             )}
 
