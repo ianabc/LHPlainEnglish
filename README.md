@@ -1,8 +1,8 @@
-# Plain English Game
+# Plain Language Game
 
 This is a boilerplate react app to publish [a react
-game](https://ianabc.github.io/LHPlainEnglish) associated with a presentation on
-Plain English by LH. The idea is the app will show you a page with a sentence
+game](https://ianabc.github.io/LHPlainLanguage) associated with a presentation on
+Plain Language by LH. The idea is the app will show you a page with a sentence
 containing a redundant word. You can click each word, and you'll get feedback on
 your guesses. To run it locally,
 ```shell
@@ -26,5 +26,6 @@ The easiest way to do this is probably to make a CSV with the `sentence`,
 into typescript/json as above. Once you are ready
 
 ```shell
+$ npm run build
 $ npm run gh-pages
 ```

@@ -2,7 +2,7 @@
   "name": "plain-english-word-game",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ianabc.github.io/LHPlainEnglish",
+  "homepage": "https://ianabc.github.io/LHPlainLanguage",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
