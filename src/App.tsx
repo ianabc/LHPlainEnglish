@@ -67,9 +67,9 @@ export function App() {
   return (
     <div className="app-root">
       <header className="app-header">
-        <h1>Lynsey's Plain English Word Game</h1>
+        <h1>Lynsey's Plain Language Word Game</h1>
         <p className="subtitle">
-          Spot the (first) redundant word to make each sentence cleaner and sharper.
+          Spot the redundant word to make each sentence cleaner and sharper.
         </p>
       </header>
 
@@ -112,7 +112,7 @@ export function App() {
 
           <div className="feedback">
             {isCorrect === null && (
-              <p className="hint">Hint: there&apos;s only one truly redundant word.</p>
+              <p className="hint"></p>
             )}
 
             {isCorrect === true && (
