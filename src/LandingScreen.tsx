@@ -8,8 +8,7 @@ export function LandingScreen({ onSelect }: Props) {
       <div className="game-select-card">
         <h2 className="game-select-title">Spot the redundant word</h2>
         <p className="game-select-desc">
-          Click the word in each sentence that adds nothing — because the meaning is already
-          carried by another word.
+          Find the word that adds nothing to a sentence.
         </p>
         <button
           type="button"
@@ -23,8 +22,7 @@ export function LandingScreen({ onSelect }: Props) {
       <div className="game-select-card">
         <h2 className="game-select-title">Spot the hidden verb</h2>
         <p className="game-select-desc">
-          Find the verb that has been turned into a noun — then choose it from the options
-          shown.
+          Find the verb that is hiding as a noun.
         </p>
         <button
           type="button"
