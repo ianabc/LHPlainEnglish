@@ -1,11 +1,11 @@
-export type RedundancyExample = {
+export type RedundancyGameQuestion = {
   id: number;
   sentence: string;
   redundantWord: string;
   explanation: string;
 };
 
-export const EXAMPLES: RedundancyExample[] = [
+export const REDUNDANCYGAME_EXAMPLES: RedundancyGameQuestion[] = [
   {
     "id": 0,
     "sentence": "Our seats were in such close proximity to the stage we could have touched the band",

@@ -3,7 +3,7 @@ import { LandingScreen } from "./LandingScreen";
 import { RedundancyGame } from "./RedundancyGame";
 import { VerbGame } from "./VerbGame";
 
-type Screen = "home" | "redundancy" | "nominalization";
+type Screen = "home" | "redundancy" | "verbs";
 
 export function App() {
   const [screen, setScreen] = useState<Screen>("home");
@@ -11,7 +11,7 @@ export function App() {
   const subtitle =
     screen === "redundancy"
       ? "Spot the redundant word to make each sentence cleaner and sharper."
-      : screen === "nominalization"
+      : screen === "verbs"
       ? "Find the verb hiding as a noun and choose it from the options."
       : "Choose a game to start playing.";
 
@@ -29,7 +29,7 @@ export function App() {
         {screen === "redundancy" && (
           <RedundancyGame onHome={() => setScreen("home")} />
         )}
-        {screen === "nominalization" && (
+        {screen === "verbs" && (
           <VerbGame onHome={() => setScreen("home")} />
         )}
 
@@ -38,8 +38,8 @@ export function App() {
             <p>
               You can add more examples to{" "}
               <code>
-                <a href="https://github.com/ianabc/LHPlainEnglish/blob/main/src/data/examples.ts">
-                  src/data/examples.ts
+                <a href="https://github.com/ianabc/LHPlainEnglish/blob/main/src/data/RedundancyGameExamples.ts">
+                  src/data/RedundancyGameExamples.ts
                 </a>
               </code>{" "}
               to grow the game.

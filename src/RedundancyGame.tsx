@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { EXAMPLES, RedundancyExample } from "./data/examples";
+import { REDUNDANCYGAME_EXAMPLES, RedundancyGameQuestion } from "./data/RedundancyGameExamples";
 import { getRoundSize, pickRandomIndices, scoreMessage } from "./utils";
 
 function normalizeWord(raw: string): string {
@@ -23,7 +23,7 @@ function makeQuestionStates(count: number): QuestionState[] {
 type Props = { onHome: () => void };
 
 export function RedundancyGame({ onHome }: Props) {
-  const total = EXAMPLES.length;
+  const total = REDUNDANCYGAME_EXAMPLES.length;
   const roundSize = getRoundSize(total);
 
   const [questionSet, setQuestionSet] = useState<number[]>(() =>
@@ -39,13 +39,13 @@ export function RedundancyGame({ onHome }: Props) {
     return (
       <section className="game-card">
         <p className="hint">
-          Add at least one entry in <code>src/data/examples.ts</code>.
+          Add at least one entry in <code>src/data/RedundancyGameExamples.ts</code>.
         </p>
       </section>
     );
   }
 
-  const currentExample: RedundancyExample = EXAMPLES[questionSet[position]];
+  const currentExample: RedundancyGameQuestion = REDUNDANCYGAME_EXAMPLES[questionSet[position]];
   const { selectedWordIndex, isCorrect } = questionStates[position];
 
   const words = useMemo(

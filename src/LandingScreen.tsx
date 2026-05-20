@@ -1,4 +1,4 @@
-type Screen = "redundancy" | "nominalization";
+type Screen = "redundancy" | "verbs";
 
 type Props = { onSelect: (game: Screen) => void };
 
@@ -29,7 +29,7 @@ export function LandingScreen({ onSelect }: Props) {
         <button
           type="button"
           className="nav-button primary"
-          onClick={() => onSelect("nominalization")}
+          onClick={() => onSelect("verbs")}
         >
           Play
         </button>
