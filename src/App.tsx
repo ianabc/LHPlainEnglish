@@ -6,7 +6,11 @@ import { VerbGame } from "./VerbGame";
 type Screen = "home" | "redundancy" | "verbs";
 
 export function App() {
-  const [screen, setScreen] = useState<Screen>("home");
+  const [screen, setScreen] = useState<Screen>(() => {
+    const param = new URLSearchParams(window.location.search).get("game");
+    if (param === "redundancy" || param === "verbs") return param;
+    return "home";
+  });
 
   const subtitle =
     screen === "redundancy"
