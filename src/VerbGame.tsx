@@ -20,7 +20,7 @@ type Props = { onHome: () => void };
 
 export function VerbGame({ onHome }: Props) {
   const total = VERBGAME_EXAMPLES.length;
-  const roundSize = getRoundSize(total);
+  const roundSize = getRoundSize(total, 5);
 
   const [questionSet, setQuestionSet] = useState<number[]>(() =>
     pickRandomIndices(total, roundSize)

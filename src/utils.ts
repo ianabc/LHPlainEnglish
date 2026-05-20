@@ -1,9 +1,7 @@
-const DEFAULT_ROUND_SIZE = 7;
-
-export function getRoundSize(total: number): number {
+export function getRoundSize(total: number, defaultSize = 7): number {
   const param = new URLSearchParams(window.location.search).get("questions");
-  const parsed = param !== null ? parseInt(param, 10) : DEFAULT_ROUND_SIZE;
-  const n = Number.isFinite(parsed) ? parsed : DEFAULT_ROUND_SIZE;
+  const parsed = param !== null ? parseInt(param, 10) : defaultSize;
+  const n = Number.isFinite(parsed) ? parsed : defaultSize;
   return Math.max(1, Math.min(n, total));
 }
 
