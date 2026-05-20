@@ -18,7 +18,7 @@ function makeQuestionStates(count: number): QuestionState[] {
 
 type Props = { onHome: () => void };
 
-export function NominalizationGame({ onHome }: Props) {
+export function VerbGame({ onHome }: Props) {
   const total = VERBGAME_EXAMPLES.length;
   const roundSize = getRoundSize(total);
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { LandingScreen } from "./LandingScreen";
 import { RedundancyGame } from "./RedundancyGame";
-import { NominalizationGame } from "./NominalizationGame";
+import { VerbGame } from "./VerbGame";
 
 type Screen = "home" | "redundancy" | "nominalization";
 
@@ -18,7 +18,7 @@ export function App() {
   return (
     <div className="app-root">
       <header className="app-header">
-        <h1>Lynsey's Plain Language Word Game</h1>
+        <h1>Lynsey's Plain Language Word Games</h1>
         <p className="subtitle">{subtitle}</p>
       </header>
 
@@ -30,7 +30,7 @@ export function App() {
           <RedundancyGame onHome={() => setScreen("home")} />
         )}
         {screen === "nominalization" && (
-          <NominalizationGame onHome={() => setScreen("home")} />
+          <VerbGame onHome={() => setScreen("home")} />
         )}
 
         {screen !== "home" && (
