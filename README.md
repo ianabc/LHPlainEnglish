@@ -27,5 +27,5 @@ into typescript/json as above. Once you are ready
 
 ```shell
 $ npm run build
-$ npm run gh-pages
+$ npm run deploy
 ```
