@@ -29,3 +29,12 @@ into typescript/json as above. Once you are ready
 $ npm run build
 $ npm run deploy
 ```
+
+## Landing page
+![](./qr.png)
+
+### Redundant Words Game
+![](./redundancy-qr.png)
+
+### Verb Game
+![](./verbs-qr.png)
